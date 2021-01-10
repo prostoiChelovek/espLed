@@ -94,17 +94,6 @@ $EndComp
 Wire Wire Line
 	3325 3250 3325 3200
 $Comp
-L Device:Q_PMOS_DGS Q1
-U 1 1 5FFCD3D9
-P 2325 2950
-F 0 "Q1" V 2667 2950 50  0000 C CNN
-F 1 "IRF9310TRPBF" V 2576 2950 50  0000 C CNN
-F 2 "custom:IRF9310PBF" H 2525 3050 50  0001 C CNN
-F 3 "https://static.chipdip.ru/lib/304/DOC004304962.pdf" H 2325 2950 50  0001 C CNN
-	1    2325 2950
-	0    -1   -1   0   
-$EndComp
-$Comp
 L power:GND #PWR04
 U 1 1 5FFD5FC1
 P 2325 3200
@@ -136,17 +125,6 @@ Text HLabel 2075 2850 0    50   Input ~ 0
 12v_in
 Wire Wire Line
 	2075 2850 2125 2850
-$Comp
-L ESP8266:ESP-12F U2
-U 1 1 5FFF27BA
-P 7425 3850
-F 0 "U2" H 7425 4615 50  0000 C CNN
-F 1 "ESP-12F" H 7425 4524 50  0000 C CNN
-F 2 "ESP8266:ESP-12E_SMD" H 7425 3850 50  0001 C CNN
-F 3 "" H 7425 3850 50  0001 C CNN
-	1    7425 3850
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:R_Small R4
 U 1 1 5FFF4B8D
@@ -417,20 +395,12 @@ Wire Wire Line
 	9175 3550 9175 3500
 Wire Wire Line
 	8525 3950 9175 3950
-Text HLabel 6475 3950 0    50   Output ~ 0
-led1
 Wire Wire Line
 	6475 3950 6525 3950
 Text HLabel 9175 3500 1    50   Input ~ 0
 RX
-Text HLabel 6475 4050 0    50   Output ~ 0
-led2
 Wire Wire Line
 	6525 4050 6475 4050
-Text HLabel 8925 3850 2    50   Output ~ 0
-led3
-Wire Wire Line
-	8925 3850 8325 3850
 $Comp
 L power:GND #PWR0109
 U 1 1 6009ECDE
@@ -459,19 +429,17 @@ F 3 "~" H 3125 3925 50  0001 C CNN
 	1    3125 3925
 	1    0    0    -1  
 $EndComp
-Text HLabel 1775 5200 0    50   Input ~ 0
-led1
 Wire Wire Line
-	1825 5200 1775 5200
+	2925 5200 2875 5200
 $Comp
 L Device:R_Small R1
 U 1 1 600C9AA0
-P 1925 5200
-F 0 "R1" V 1729 5200 50  0000 C CNN
-F 1 "220" V 1820 5200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 1925 5200 50  0001 C CNN
-F 3 "~" H 1925 5200 50  0001 C CNN
-	1    1925 5200
+P 3025 5200
+F 0 "R1" V 2829 5200 50  0000 C CNN
+F 1 "220" V 2920 5200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 3025 5200 50  0001 C CNN
+F 3 "~" H 3025 5200 50  0001 C CNN
+	1    3025 5200
 	0    1    1    0   
 $EndComp
 $Comp
@@ -504,19 +472,17 @@ F 3 "https://static.chipdip.ru/lib/046/DOC003046153.pdf" H 2175 4850 50  0001 C 
 	1    2175 4850
 	0    -1   -1   0   
 $EndComp
-Text HLabel 2875 5200 0    50   Input ~ 0
-led2
 Wire Wire Line
-	2925 5200 2875 5200
+	4025 5200 3975 5200
 $Comp
 L Device:R_Small R2
 U 1 1 600FDD72
-P 3025 5200
-F 0 "R2" V 2829 5200 50  0000 C CNN
-F 1 "220" V 2920 5200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 3025 5200 50  0001 C CNN
-F 3 "~" H 3025 5200 50  0001 C CNN
-	1    3025 5200
+P 4125 5200
+F 0 "R2" V 3929 5200 50  0000 C CNN
+F 1 "220" V 4020 5200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 4125 5200 50  0001 C CNN
+F 3 "~" H 4125 5200 50  0001 C CNN
+	1    4125 5200
 	0    1    1    0   
 $EndComp
 $Comp
@@ -549,19 +515,17 @@ F 3 "https://static.chipdip.ru/lib/046/DOC003046153.pdf" H 3275 4850 50  0001 C 
 	1    3275 4850
 	0    -1   -1   0   
 $EndComp
-Text HLabel 3975 5200 0    50   Input ~ 0
-led3
 Wire Wire Line
-	4025 5200 3975 5200
+	1825 5200 1775 5200
 $Comp
 L Device:R_Small R3
 U 1 1 60107E5C
-P 4125 5200
-F 0 "R3" V 3929 5200 50  0000 C CNN
-F 1 "220" V 4020 5200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 4125 5200 50  0001 C CNN
-F 3 "~" H 4125 5200 50  0001 C CNN
-	1    4125 5200
+P 1925 5200
+F 0 "R3" V 1729 5200 50  0000 C CNN
+F 1 "220" V 1820 5200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 1925 5200 50  0001 C CNN
+F 3 "~" H 1925 5200 50  0001 C CNN
+	1    1925 5200
 	0    1    1    0   
 $EndComp
 $Comp
@@ -598,8 +562,6 @@ Wire Wire Line
 	1900 4750 1975 4750
 Text HLabel 1900 4750 0    50   Output ~ 0
 led1_out
-Text HLabel 3025 4750 0    50   Output ~ 0
-led2_out
 Wire Wire Line
 	3025 4750 3075 4750
 Text HLabel 4125 4750 0    50   Output ~ 0
@@ -702,4 +664,42 @@ Wire Notes Line
 	1475 5325 10100 5325
 Text Notes 5000 2400 0    50   ~ 0
 esp-12f MCU
+Text HLabel 6475 4050 0    50   Output ~ 0
+led3
+Wire Wire Line
+	8925 3850 8325 3850
+$Comp
+L ESP8266:ESP-12F U2
+U 1 1 5FFF27BA
+P 7425 3850
+F 0 "U2" H 7425 4615 50  0000 C CNN
+F 1 "ESP-12F" H 7425 4524 50  0000 C CNN
+F 2 "ESP8266:ESP-12E_SMD" H 7425 3850 50  0001 C CNN
+F 3 "" H 7425 3850 50  0001 C CNN
+	1    7425 3850
+	1    0    0    -1  
+$EndComp
+Text HLabel 6475 3950 0    50   Output ~ 0
+led2
+Text HLabel 8925 3850 2    50   Output ~ 0
+led1
+$Comp
+L Device:Q_PMOS_DGS Q1
+U 1 1 5FFCD3D9
+P 2325 2950
+F 0 "Q1" V 2667 2950 50  0000 C CNN
+F 1 "IRF9310TRPBF" V 2576 2950 50  0000 C CNN
+F 2 "custom:IRF9310PBF" H 2525 3050 50  0001 C CNN
+F 3 "https://static.chipdip.ru/lib/304/DOC004304962.pdf" H 2325 2950 50  0001 C CNN
+	1    2325 2950
+	0    -1   -1   0   
+$EndComp
+Text HLabel 3025 4750 0    50   Output ~ 0
+led2_out
+Text HLabel 3975 5200 0    50   Input ~ 0
+led3
+Text HLabel 2875 5200 0    50   Input ~ 0
+led2
+Text HLabel 1775 5200 0    50   Input ~ 0
+led1
 $EndSCHEMATC
