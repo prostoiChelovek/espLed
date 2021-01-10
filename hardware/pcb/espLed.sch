@@ -401,34 +401,6 @@ Text HLabel 9175 3500 1    50   Input ~ 0
 RX
 Wire Wire Line
 	6525 4050 6475 4050
-$Comp
-L power:GND #PWR0109
-U 1 1 6009ECDE
-P 2875 4075
-F 0 "#PWR0109" H 2875 3825 50  0001 C CNN
-F 1 "GND" H 2880 3902 50  0000 C CNN
-F 2 "" H 2875 4075 50  0001 C CNN
-F 3 "" H 2875 4075 50  0001 C CNN
-	1    2875 4075
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2875 3925 2925 3925
-Text HLabel 2875 3825 0    50   Input ~ 0
-TX
-Text HLabel 2875 3925 0    50   Input ~ 0
-RX
-$Comp
-L Connector_Generic:Conn_01x03 J2
-U 1 1 6009A6C5
-P 3125 3925
-F 0 "J2" H 3225 4025 50  0000 C CNN
-F 1 "flashing" H 3350 3925 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 3125 3925 50  0001 C CNN
-F 3 "~" H 3125 3925 50  0001 C CNN
-	1    3125 3925
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2925 5200 2875 5200
 $Comp
@@ -568,80 +540,6 @@ Text HLabel 4125 4750 0    50   Output ~ 0
 led3_out
 Wire Wire Line
 	4125 4750 4175 4750
-Wire Wire Line
-	1900 3925 1950 3925
-Text HLabel 1900 3925 0    50   Input ~ 0
-led3_out
-Wire Wire Line
-	1900 3725 1950 3725
-Wire Wire Line
-	1900 3825 1950 3825
-Text HLabel 1900 3825 0    50   Input ~ 0
-led2_out
-Text HLabel 1900 3725 0    50   Input ~ 0
-led1_out
-$Comp
-L power:GND #PWR0113
-U 1 1 6011AB1B
-P 1900 4075
-F 0 "#PWR0113" H 1900 3825 50  0001 C CNN
-F 1 "GND" H 1905 3902 50  0000 C CNN
-F 2 "" H 1900 4075 50  0001 C CNN
-F 3 "" H 1900 4075 50  0001 C CNN
-	1    1900 4075
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x04 J1
-U 1 1 6010A276
-P 2150 3825
-F 0 "J1" H 2300 3825 50  0000 R CNN
-F 1 "led_strip" H 2550 3725 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 2150 3825 50  0001 C CNN
-F 3 "~" H 2150 3825 50  0001 C CNN
-	1    2150 3825
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2875 3825 2925 3825
-Wire Wire Line
-	2875 4075 2875 4025
-Wire Wire Line
-	2875 4025 2925 4025
-Wire Wire Line
-	1900 4075 1900 4025
-Wire Wire Line
-	1900 4025 1950 4025
-$Comp
-L Connector_Generic:Conn_01x02 J3
-U 1 1 601B4A41
-P 4200 3925
-F 0 "J3" H 4275 3925 50  0000 L CNN
-F 1 "power" H 4280 3826 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 4200 3925 50  0001 C CNN
-F 3 "~" H 4200 3925 50  0001 C CNN
-	1    4200 3925
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0114
-U 1 1 601B52CF
-P 3950 4075
-F 0 "#PWR0114" H 3950 3825 50  0001 C CNN
-F 1 "GND" H 3955 3902 50  0000 C CNN
-F 2 "" H 3950 4075 50  0001 C CNN
-F 3 "" H 3950 4075 50  0001 C CNN
-	1    3950 4075
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3950 4075 3950 4025
-Wire Wire Line
-	3950 4025 4000 4025
-Text HLabel 3950 3925 0    50   Input ~ 0
-12v_in
-Wire Wire Line
-	3950 3925 4000 3925
 Text Notes 1525 2475 0    50   ~ 0
 3v3 regulator\nand reverse voltage protection
 Text Notes 1525 3575 0    50   ~ 0
@@ -702,4 +600,93 @@ Text HLabel 2875 5200 0    50   Input ~ 0
 led2
 Text HLabel 1775 5200 0    50   Input ~ 0
 led1
+Wire Wire Line
+	3950 3925 4000 3925
+Text HLabel 3950 3925 0    50   Input ~ 0
+12v_in
+Wire Wire Line
+	3950 4025 4000 4025
+Wire Wire Line
+	3950 4075 3950 4025
+$Comp
+L power:GND #PWR0114
+U 1 1 601B52CF
+P 3950 4075
+F 0 "#PWR0114" H 3950 3825 50  0001 C CNN
+F 1 "GND" H 3955 3902 50  0000 C CNN
+F 2 "" H 3950 4075 50  0001 C CNN
+F 3 "" H 3950 4075 50  0001 C CNN
+	1    3950 4075
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 601B4A41
+P 4200 3925
+F 0 "J3" H 4275 3925 50  0000 L CNN
+F 1 "power" H 4280 3826 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 4200 3925 50  0001 C CNN
+F 3 "~" H 4200 3925 50  0001 C CNN
+	1    4200 3925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2875 4025 2925 4025
+Wire Wire Line
+	2875 4075 2875 4025
+Wire Wire Line
+	2875 3825 2925 3825
+$Comp
+L Connector_Generic:Conn_01x04 J1
+U 1 1 6010A276
+P 2150 3825
+F 0 "J1" H 2300 3825 50  0000 R CNN
+F 1 "led_strip" H 2550 3725 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 2150 3825 50  0001 C CNN
+F 3 "~" H 2150 3825 50  0001 C CNN
+	1    2150 3825
+	1    0    0    -1  
+$EndComp
+Text HLabel 1900 3725 0    50   Input ~ 0
+led1_out
+Text HLabel 1900 3825 0    50   Input ~ 0
+led2_out
+Wire Wire Line
+	1900 3825 1950 3825
+Wire Wire Line
+	1900 3725 1950 3725
+Text HLabel 1900 3925 0    50   Input ~ 0
+led3_out
+Wire Wire Line
+	1900 3925 1950 3925
+$Comp
+L Connector_Generic:Conn_01x03 J2
+U 1 1 6009A6C5
+P 3125 3925
+F 0 "J2" H 3225 4025 50  0000 C CNN
+F 1 "flashing" H 3350 3925 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 3125 3925 50  0001 C CNN
+F 3 "~" H 3125 3925 50  0001 C CNN
+	1    3125 3925
+	1    0    0    -1  
+$EndComp
+Text HLabel 2875 3925 0    50   Input ~ 0
+RX
+Text HLabel 2875 3825 0    50   Input ~ 0
+TX
+Wire Wire Line
+	2875 3925 2925 3925
+$Comp
+L power:GND #PWR0109
+U 1 1 6009ECDE
+P 2875 4075
+F 0 "#PWR0109" H 2875 3825 50  0001 C CNN
+F 1 "GND" H 2880 3902 50  0000 C CNN
+F 2 "" H 2875 4075 50  0001 C CNN
+F 3 "" H 2875 4075 50  0001 C CNN
+	1    2875 4075
+	1    0    0    -1  
+$EndComp
+Text HLabel 1950 4025 0    50   Input ~ 0
+12v_in
 $EndSCHEMATC
