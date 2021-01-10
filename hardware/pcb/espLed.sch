@@ -431,38 +431,223 @@ Text HLabel 9200 1500 2    50   Output ~ 0
 led3
 Wire Wire Line
 	9200 1500 8600 1500
-Wire Wire Line
-	10400 3350 10350 3350
-Wire Wire Line
-	10400 3400 10400 3350
 $Comp
 L power:GND #PWR?
 U 1 1 6009ECDE
-P 10400 3400
-F 0 "#PWR?" H 10400 3150 50  0001 C CNN
-F 1 "GND" H 10405 3227 50  0000 C CNN
-F 2 "" H 10400 3400 50  0001 C CNN
-F 3 "" H 10400 3400 50  0001 C CNN
-	1    10400 3400
+P 7850 4900
+F 0 "#PWR?" H 7850 4650 50  0001 C CNN
+F 1 "GND" H 7855 4727 50  0000 C CNN
+F 2 "" H 7850 4900 50  0001 C CNN
+F 3 "" H 7850 4900 50  0001 C CNN
+	1    7850 4900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10400 3250 10350 3250
-Text HLabel 10400 3250 2    50   Input ~ 0
+	7850 4750 7900 4750
+Text HLabel 7850 4650 0    50   Input ~ 0
 TX
-Wire Wire Line
-	10400 3150 10350 3150
-Text HLabel 10400 3150 2    50   Input ~ 0
+Text HLabel 7850 4750 0    50   Input ~ 0
 RX
 $Comp
 L Connector_Generic:Conn_01x03 J?
 U 1 1 6009A6C5
-P 10150 3250
-F 0 "J?" H 10068 2925 50  0000 C CNN
-F 1 "flashing" H 10068 3016 50  0000 C CNN
-F 2 "" H 10150 3250 50  0001 C CNN
-F 3 "~" H 10150 3250 50  0001 C CNN
-	1    10150 3250
-	-1   0    0    1   
+P 8100 4750
+F 0 "J?" H 8075 5050 50  0000 C CNN
+F 1 "flashing" H 8175 4975 50  0000 C CNN
+F 2 "" H 8100 4750 50  0001 C CNN
+F 3 "~" H 8100 4750 50  0001 C CNN
+	1    8100 4750
+	1    0    0    -1  
 $EndComp
+Text HLabel 6475 3575 0    50   Input ~ 0
+led1
+Wire Wire Line
+	6525 3575 6475 3575
+$Comp
+L Device:R_Small R?
+U 1 1 600C9AA0
+P 6625 3575
+F 0 "R?" V 6429 3575 50  0000 C CNN
+F 1 "220" V 6520 3575 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 6625 3575 50  0001 C CNN
+F 3 "~" H 6625 3575 50  0001 C CNN
+	1    6625 3575
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 600C49E3
+P 7225 3175
+F 0 "#PWR?" H 7225 2925 50  0001 C CNN
+F 1 "GND" H 7230 3002 50  0000 C CNN
+F 2 "" H 7225 3175 50  0001 C CNN
+F 3 "" H 7225 3175 50  0001 C CNN
+	1    7225 3175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7225 3175 7225 3125
+Wire Wire Line
+	7075 3125 7225 3125
+Wire Wire Line
+	6725 3575 6875 3575
+Wire Wire Line
+	6875 3425 6875 3575
+$Comp
+L Device:Q_NMOS_DGS Q?
+U 1 1 600BF2DA
+P 6875 3225
+F 0 "Q?" V 7150 3025 50  0000 L CNN
+F 1 "AO3400A" V 7075 2800 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7075 3325 50  0001 C CNN
+F 3 "https://static.chipdip.ru/lib/046/DOC003046153.pdf" H 6875 3225 50  0001 C CNN
+	1    6875 3225
+	0    -1   -1   0   
+$EndComp
+Text HLabel 7575 3575 0    50   Input ~ 0
+led2
+Wire Wire Line
+	7625 3575 7575 3575
+$Comp
+L Device:R_Small R?
+U 1 1 600FDD72
+P 7725 3575
+F 0 "R?" V 7529 3575 50  0000 C CNN
+F 1 "220" V 7620 3575 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 7725 3575 50  0001 C CNN
+F 3 "~" H 7725 3575 50  0001 C CNN
+	1    7725 3575
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 600FDD78
+P 8325 3175
+F 0 "#PWR?" H 8325 2925 50  0001 C CNN
+F 1 "GND" H 8330 3002 50  0000 C CNN
+F 2 "" H 8325 3175 50  0001 C CNN
+F 3 "" H 8325 3175 50  0001 C CNN
+	1    8325 3175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8325 3175 8325 3125
+Wire Wire Line
+	8175 3125 8325 3125
+Wire Wire Line
+	7825 3575 7975 3575
+Wire Wire Line
+	7975 3425 7975 3575
+$Comp
+L Device:Q_NMOS_DGS Q?
+U 1 1 600FDD82
+P 7975 3225
+F 0 "Q?" V 8250 3025 50  0000 L CNN
+F 1 "AO3400A" V 8175 2800 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8175 3325 50  0001 C CNN
+F 3 "https://static.chipdip.ru/lib/046/DOC003046153.pdf" H 7975 3225 50  0001 C CNN
+	1    7975 3225
+	0    -1   -1   0   
+$EndComp
+Text HLabel 8675 3575 0    50   Input ~ 0
+led3
+Wire Wire Line
+	8725 3575 8675 3575
+$Comp
+L Device:R_Small R?
+U 1 1 60107E5C
+P 8825 3575
+F 0 "R?" V 8629 3575 50  0000 C CNN
+F 1 "220" V 8720 3575 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 8825 3575 50  0001 C CNN
+F 3 "~" H 8825 3575 50  0001 C CNN
+	1    8825 3575
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60107E62
+P 9425 3175
+F 0 "#PWR?" H 9425 2925 50  0001 C CNN
+F 1 "GND" H 9430 3002 50  0000 C CNN
+F 2 "" H 9425 3175 50  0001 C CNN
+F 3 "" H 9425 3175 50  0001 C CNN
+	1    9425 3175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9425 3175 9425 3125
+Wire Wire Line
+	9275 3125 9425 3125
+Wire Wire Line
+	8925 3575 9075 3575
+Wire Wire Line
+	9075 3425 9075 3575
+$Comp
+L Device:Q_NMOS_DGS Q?
+U 1 1 60107E6C
+P 9075 3225
+F 0 "Q?" V 9350 3025 50  0000 L CNN
+F 1 "AO3400A" V 9275 2800 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9275 3325 50  0001 C CNN
+F 3 "https://static.chipdip.ru/lib/046/DOC003046153.pdf" H 9075 3225 50  0001 C CNN
+	1    9075 3225
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6600 3125 6675 3125
+Text HLabel 6600 3125 0    50   Output ~ 0
+led1_out
+Text HLabel 7725 3125 0    50   Output ~ 0
+led2_out
+Wire Wire Line
+	7725 3125 7775 3125
+Text HLabel 8825 3125 0    50   Output ~ 0
+led3_out
+Wire Wire Line
+	8825 3125 8875 3125
+Wire Wire Line
+	6825 4750 6875 4750
+Text HLabel 6825 4750 0    50   Input ~ 0
+led3_out
+Wire Wire Line
+	6825 4550 6875 4550
+Wire Wire Line
+	6825 4650 6875 4650
+Text HLabel 6825 4650 0    50   Input ~ 0
+led2_out
+Text HLabel 6825 4550 0    50   Input ~ 0
+led1_out
+$Comp
+L power:GND #PWR?
+U 1 1 6011AB1B
+P 6825 4900
+F 0 "#PWR?" H 6825 4650 50  0001 C CNN
+F 1 "GND" H 6830 4727 50  0000 C CNN
+F 2 "" H 6825 4900 50  0001 C CNN
+F 3 "" H 6825 4900 50  0001 C CNN
+	1    6825 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 6010A276
+P 7075 4650
+F 0 "J?" H 7050 4950 50  0000 R CNN
+F 1 "led_strip" H 7275 4875 50  0000 R CNN
+F 2 "" H 7075 4650 50  0001 C CNN
+F 3 "~" H 7075 4650 50  0001 C CNN
+	1    7075 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 4650 7900 4650
+Wire Wire Line
+	7850 4900 7850 4850
+Wire Wire Line
+	7850 4850 7900 4850
+Wire Wire Line
+	6825 4900 6825 4850
+Wire Wire Line
+	6825 4850 6875 4850
 $EndSCHEMATC
